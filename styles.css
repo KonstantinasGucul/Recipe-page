@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+  background-color: #f3e5d7;
+  color: #5f564d;
+  padding: 20px;
+  height: 100%;
+}
+
+h1,
+h2 {
+  font-family: 'Young Serif', sans-serif;
+}
+
+img {
+  max-width: 656px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  gap: 40px;
+  max-width: 736px;
+  width: 100%;
+  height: auto;
+  border: solid black 1px;
+  border-radius: 24px;
+  background-color: #ffffff;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+  max-width: 656px;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  display: block;
+}
+
+.title h1 {
+  font-size: 40px;
+  color: #312e2c;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 24px;
+}
+
+.title p {
+  font-size: 16px;
+  color: #5f564d;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.preparation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 24px;
+  gap: 16px;
+  background-color: #fff7fb;
+  border-radius: 12px;
+  max-width: 656px;
+  width: 100%;
+}
+
+.preparation h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #7a284e;
+}
+
+.preparation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Controls space between list items */
+  padding-left: 20px; /* Adjusts bullet indentation */
+  list-style-type: disc; /* Keeps classic bullets */
+  color: #5f564d; /* Matches text color */
+  font-size: 16px;
+  font-weight: 400;
+}
