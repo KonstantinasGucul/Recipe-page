@@ -37,11 +37,51 @@ h2 {
   font-family: 'Young Serif', sans-serif;
 }
 
+.section-heading {
+  color: #854632;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.section-content {
+  font-size: 16px;
+  color: #5f564d;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 img {
   max-width: 656px;
   width: 100%;
   height: auto;
   border-radius: 12px;
+}
+
+.section-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  border-radius: 12px;
+  max-width: 656px;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding-left: 8px;
 }
 
 .line {
@@ -53,23 +93,35 @@ img {
 .container {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: flex-start;
   padding: 40px;
   gap: 40px;
   max-width: 736px;
   width: 100%;
   height: auto;
-  border: solid black 1px;
   border-radius: 24px;
   background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
 }
 
 .title-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
+  gap: 32px;
   max-width: 656px;
   width: 100%;
   height: auto;
@@ -83,53 +135,23 @@ img {
   line-height: 1;
 }
 
-.title-content p {
-  font-size: 16px;
-  color: #5f564d;
-  font-weight: 300;
-  line-height: 150%;
-}
-
 .preparation {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   padding: 24px;
-  gap: 16px;
   background-color: #fff7fb;
-  border-radius: 12px;
-  max-width: 656px;
-  width: 100%;
 }
 
 .preparation h3 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: #7a284e;
 }
 
-.prep-list {
+.bullet {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 8px;
-  width: 100%;
-}
-
-.prep-item {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 16px;
-  padding-left: 8px;
-}
-
-.dot {
-  align-self: center;
   flex-shrink: 0;
   width: 4px;
   height: 4px;
   background-color: #7a284e;
   border-radius: 50%;
+  margin-right: 12px;
 }
